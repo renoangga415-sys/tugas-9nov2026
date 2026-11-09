@@ -1,0 +1,374 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* NAVBAR DARK THEME */
+.navbar {
+    background-color: #121619;
+    padding: 15px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand-logo {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffbe33;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-btn {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icon-btn:hover {
+    color: #ffbe33;
+}
+
+.btn-yellow {
+    background-color: #ffbe33;
+    color: #ffffff;
+    padding: 10px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-yellow:hover {
+    background-color: #e6a827;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background-color: #121619;
+    color: #ffffff;
+    padding: 60px 5%;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    color: #ffbe33;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* FAKULTAS GRID (Cream Cards) */
+.fakultas-section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #ffbe33;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.fakultas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1dfr);
+    gap: 25px;
+}
+
+.card-fakultas {
+    background-color: #f7e5c8;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card-fakultas:hover {
+    transform: translateY(-5px);
+}
+
+.card-fakultas img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-fakultas h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+.card-fakultas p {
+    font-size: 13px;
+    color: #555555;
+}
+
+/* TESTIMONI SECTION (Dark Cards) */
+.testimoni-section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.script-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #222222;
+}
+
+.script-title-left {
+    font-family: 'Great Vibes', cursive;
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.testimoni-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.card-testimoni {
+    background-color: #222831;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.card-testimoni p {
+    font-size: 13px;
+    color: #dddddd;
+    margin-bottom: 20px;
+}
+
+.card-testimoni h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-testimoni span {
+    font-size: 12px;
+    color: #aaaaaa;
+}
+
+/* FORM & MAP SECTION */
+.booking-section {
+    padding: 60px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.booking-container {
+    display: flex;
+    gap: 30px;
+}
+
+.booking-form {
+    flex: 1;
+}
+
+.booking-form input, 
+.booking-form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.btn-full {
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px;
+}
+
+.booking-map {
+    flex: 1;
+}
+
+.booking-map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    border: 0;
+    border-radius: 12px;
+}
+
+/* FOOTER SECTION */
+.footer {
+    background-color: #222831;
+    color: #ffffff;
+    padding-top: 50px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5% 40px 5%;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col.center {
+    text-align: center;
+}
+
+.footer-col h3 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-col p {
+    font-size: 13px;
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.social-icons a {
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    color: #222831;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #ffbe33;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    background-color: #1a1e24;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #888888;
+}
+
+/* RESPONSIVE LAYOUT (HP & Tablet) */
+@media (max-width: 768px) {
+    .hero-container, 
+    .booking-container, 
+    .footer-container {
+        flex-direction: column;
+    }
+    
+    .fakultas-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .testimoni-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        display: none; /* Menyembunyikan menu di tampilan layar HP kecil */
+    }
+}
